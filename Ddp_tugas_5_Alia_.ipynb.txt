@@ -1,0 +1,100 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "uLftW25pgo6f"
+      },
+      "outputs": [],
+      "source": [
+        "#kendaraan = ['beat karbu',\n",
+        "#'motor', 200, 'pink', 2]\n",
+        "#print(kendaraan)\n",
+        "#kendaraan.append('13jt')\n",
+        "#kendaraan.append('matic')\n",
+        "#print(kendaraan)\n",
+        "#kendaraan.insert(2, 'honda')\n",
+        "#print(kendaraan)\n",
+        "#print(type(kendaraan[0]))\n",
+        "#print(type(kendaraan[1]))\n",
+        "#print(type(kendaraan[2]))\n",
+        "#print(type(kendaraan[3]))\n",
+        "#print(type(kendaraan[4]))\n",
+        "#print(type(kendaraan[5]))\n",
+        "#print(type(kendaraan[6]))\n",
+        "#print(type(kendaraan[7]))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hitung_luas = int(input(\"\"\"pilih  salah\n",
+        "satu :\n",
+        "1. hitung luas persegi\n",
+        "2. hitung luas lingkaran\n",
+        "3. hitung luas segitiga\n",
+        "\"\"\"))\n",
+        "match hitung_luas:\n",
+        "    case 1:\n",
+        "        print('menghitung luas persegi')\n",
+        "        sisi = int(input('masukkan nilai sisi: '))\n",
+        "        hitung_luas_persegi = sisi **2\n",
+        "        print (f'jadi luas persegi dengan sisi {sisi} cm adalah {hitung_luas_persegi} cm^2')\n",
+        "    case 2:\n",
+        "        print('menghitung luas lingkaran')\n",
+        "        r = int(input('masukkan nilai r: '))\n",
+        "        hitung_luas_lingkaran = 3.14 * r * r\n",
+        "        print (f'jadi luas lingkaran dengan r {r} cm adalah {hitung_luas_lingkaran} cm^2')\n",
+        "    case 3:\n",
+        "        print('menghitung luas segitiga')\n",
+        "        alas = int(input('masukkan panjang segitiga: '))\n",
+        "        tinggi = int(input('masukkan tinggi: '))\n",
+        "        luas_segitiga = 0,5 * alas * tinggi\n",
+        "        print (f'luas segitiga dengan alas {alas} cm dan tinggi {tinggi} cm adalah {luas_segitiga} cm^2')\n",
+        "    case _:\n",
+        "        print('pilihan tidak valid')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "C3z-gcv4gysH",
+        "outputId": "f826afcd-e16e-4977-9ad4-3f9c3987850c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "pilih  salah\n",
+            "satu :\n",
+            "1. hitung luas persegi\n",
+            "2. hitung luas lingkaran\n",
+            "3. hitung luas segitiga\n",
+            "3\n",
+            "menghitung luas segitiga\n",
+            "masukkan panjang segitiga: 6\n",
+            "masukkan tinggi: 4\n",
+            "luas segitiga dengan alas 6 cm dan tinggi 4 cm adalah (0, 120) cm^2\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
